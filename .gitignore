@@ -1,1 +1,9 @@
 /.idea/
+
+comp*.iml
+mvnw
+mvnw.cmd
+.mvn
+.gitignore
+
+
