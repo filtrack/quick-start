@@ -1,6 +1,6 @@
-package com.app.comp.service.impl;
+package com.app.service.impl;
 
-import com.app.comp.service.RedisService;
+import com.app.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;

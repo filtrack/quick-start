@@ -1,7 +1,7 @@
 package com.app.comp;
 
 import com.app.comp.service.RedisService;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -11,10 +11,6 @@ class RedisAppTests {
     @Autowired
     RedisService redisService;
 
-    @Test
-    void contextLoads() {
-
-    }
 
     @Test
     void testRedis(){

@@ -1,0 +1,21 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /user
+spring:
+  application:
+    name: provider-user
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    include: common-config
+    active: dev
+logging:
+  level:
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: trace
+
