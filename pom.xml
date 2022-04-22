@@ -18,7 +18,7 @@
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.7.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud-nacos.version>2.0.3.RELEASE</spring-cloud-nacos.version>
-        <rocketmq.version>4.6.1</rocketmq.version>
+        <spring-boot.rocketmq.version>2.2.0</spring-boot.rocketmq.version>
         <seata.version>1.3.0</seata.version>
         <sentinel.version>1.8.1</sentinel.version>
         <hutool.version>5.7.22</hutool.version>
@@ -111,6 +111,13 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <!-- RocketMq -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${spring-boot.rocketmq.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -132,7 +139,6 @@
         <module>common-base</module>
         <module>common-config</module>
         <module>provider-user</module>
-        <module>api-user</module>
     </modules>
 
 </project>

@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.app</groupId>
-    <artifactId>service-user</artifactId>
+    <artifactId>provider-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-user</name>
-    <description>service-user</description>
+    <name>provider-user</name>
+    <description>provider-user</description>
 
     <parent>
         <artifactId>quick-start</artifactId>
@@ -80,6 +80,12 @@
                     <artifactId>mybatis-spring</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <!-- RocketMq -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
